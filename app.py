@@ -1,8 +1,9 @@
 from flask import Flask
 from flask import request
 import logging
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='/opt/defaultsite')
 
 logging.basicConfig(filename='/tmp/demo.log', level=logging.DEBUG)
 
@@ -13,4 +14,7 @@ def log_request_info():
 
 @app.route("/")
 def hello():
-    return "Hello, World!"
+    if os.path.isdir('/home/site/deployments') and len(next(os.walk('/home/site/deployments'))[1]) > 1:
+        return app.send_static_file('hostingstart_dep.html')
+    else:
+        return app.send_static_file('hostingstart.html')
