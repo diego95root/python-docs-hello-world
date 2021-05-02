@@ -39,7 +39,6 @@ def hello():
 <h1>PoC by godiego</h1>
 <button onclick="alert(document.domain)">Alert</button><br><br>
 <button onclick="cookiebomb()">Cookie bomb</button><br><br>
-<button onclick="alert(document.cookies)">Cookies</button>
 </html>
 		"""
 		return poc
