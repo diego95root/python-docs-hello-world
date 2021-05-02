@@ -19,10 +19,6 @@ comodoca.com
 0d8d2bafe358635"""
 
 
-@app.route('/')
-def hi():
-	return ''
-
 @app.route("/godiego")
 def hello():
 		poc = """<html>
