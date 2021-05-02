@@ -21,7 +21,7 @@ def hello():
 		setTimeout(()=>{alert("Cookie bomb complete! You can no longer access any host on "+d+" in your browser.")}, 1000);
 	}
 </script>
-<h1>PoC by 0xd0m7</h1>
+<h1>PoC by godiego</h1>
 <button onclick="alert(document.domain)">Alert</button><br><br>
 <button onclick="cookiebomb()">Cookie bomb</button>
 </html>
