@@ -1,5 +1,16 @@
 from flask import Flask
+from flask import request
+import logging
+import os
+
 app = Flask(__name__)
+
+logging.basicConfig(filename='/tmp/demo.log', level=logging.DEBUG)
+
+@app.before_request
+def log_request_info():
+    app.logger.debug('Headers: %s', request.headers)
+    app.logger.debug('Body: %s', request.get_data())
 
 @app.route('/.well-known/pki-validation/7DE6B3CF6445FAE29783FB5110E9EFCC.txt')
 def hi():
