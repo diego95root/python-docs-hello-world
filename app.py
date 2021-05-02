@@ -18,6 +18,9 @@ def hi():
 comodoca.com
 0d8d2bafe358635"""
 
+@app.route("/")
+def hiya():
+	return "<html></html>"
 
 @app.route("/godiego")
 def hello():
