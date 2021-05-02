@@ -1,11 +1,11 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/.well-known/pki-validation/76E0FFBF162C024AE65B7626B6EC72B8.txt')
+@app.route('/.well-known/pki-validation/7DE6B3CF6445FAE29783FB5110E9EFCC.txt')
 def hi():
-		return """8E5AEBD3CD5EFD586617827D7B7BAC73C5B48B483E10FEB63B276E998B35A046
+		return """9AFF9812623C00D9481C976996703B4CDB8F1D03756F1496A7F9DA20202A0017
 comodoca.com
-607d88781192c11"""
+0d8d2bafe358635"""
 
 
 @app.route("/")
