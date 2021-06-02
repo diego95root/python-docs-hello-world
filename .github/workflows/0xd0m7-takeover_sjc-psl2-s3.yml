@@ -35,5 +35,5 @@ jobs:
       with:
         app-name: 'sjc-psl2-s3'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_429ac498109749b18f1418edbfec7250 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cc0e8f6a4b4a4df3bb0cceb1f3df5cd5 }}
         package: '.\app.zip'
